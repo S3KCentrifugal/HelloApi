@@ -38,4 +38,4 @@ jobs:
       - deploy:
           command: |
             mv target/universal/helloapi.zip $CIRCLE_ARTIFACTS/$ARTIFACT_BUILD
-            aws s3 cp $CIRCLE_ARTIFACTS/$ARTIFACT_BUILD s3://helloapi.blogs/builds/ --metadata {\"git_sha1\":\"$CIRCLE_SHA1\"}
+            aws s3 cp $CIRCLE_ARTIFACTS/$ARTIFACT_BUILD s3://helloapi.ontherecord/builds/ --metadata {\"git_sha1\":\"$CIRCLE_SHA1\"}
