@@ -15,3 +15,5 @@ libraryDependencies ++= Seq(
 
 enablePlugins(JavaAppPackaging)
 enablePlugins(DockerPlugin)
+
+packageName in Universal := "helloapi"
