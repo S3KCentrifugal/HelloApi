@@ -1,0 +1,8 @@
+# docker-compose for testing the docker image build
+version: '3.7'
+services:
+  helloapi-service:
+    image: helloapi:0.3
+    ports:
+      - 39611:39611
+      - 5005:5005
