@@ -37,5 +37,5 @@ jobs:
             - "~/.m2"
       - deploy:
           command: |
-            mv target/universal/helloapi.zip $CIRCLE_ARTIFACTS/$ARTIFACT_BUILD
+            mv target/universal/helloapi.zip $CIRCLE_ARTIFACTS/helloapi.zip
             aws s3 cp $CIRCLE_ARTIFACTS/helloapi.zip s3://helloapi.ontherecord/builds/
